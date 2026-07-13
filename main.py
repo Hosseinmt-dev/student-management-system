@@ -12,12 +12,27 @@ db = mysql.connector.connect(
 
 cursor = db.cursor()
 
+def get_int_input(prompt):
+    while True:
+        value = input(prompt)
+        try:
+            return int(value)
+        except ValueError:
+            print("Please enter a valid number.")
+
+def get_float_input(prompt):
+    while True:
+        value = input(prompt)
+        try:
+            return float(value)
+        except ValueError:
+            print("Please enter a valid number.")
 def add_students():
     student_number = input("student_number = ")
     name = input("name =  ")
-    age = int(input("age =  "))
+    age = get_int_input("age = ")
     major = input("major = ")
-    average = float(input("avarege = "))
+    average = get_float_input("average = ")
 
     sql = """
     insert into students(student_number, name, age, major, average)
