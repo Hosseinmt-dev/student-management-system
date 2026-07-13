@@ -18,7 +18,7 @@ A simple command-line application for managing student records, built with Pytho
 
 ## Project Structure
 
-students-management/
+student-management/
 ├── main.py
 ├── .env          # database credentials (not tracked in git)
 ├── .gitignore
