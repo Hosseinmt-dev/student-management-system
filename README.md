@@ -81,8 +81,8 @@ Enter the number for the action you want to perform and follow the prompts.
 - Writing parameterized SQL queries to prevent SQL injection
 - Managing sensitive credentials securely using environment variables (`.env` + `python-dotenv`)
 - Structuring a simple CRUD (Create, Read, Update, Delete) application
-
+- Validating user input to prevent crashes from invalid data types
 ## Future Improvements
 
-- Add input validation and error handling
+
 - Refactor into a REST API
